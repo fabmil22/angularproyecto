@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   template: `
    <table   class="table">
    <tr *ngFor="let book of  all" >
-   <td><img  src="{{ book.portada}}"  width="120px"></td>
-   <td><b>{{book.titulo}}</b>
+   <td width="30%"><img  src="{{ book.portada}}"  width="50%"></td>
+   <td  width="50%"class="text-left"><b>{{book.titulo}}</b>
    <p>{{book.autor}}</p></td>
-   <td><h3>{{book.precio}}</h3></td>
+   <td width="20%" class="text-center"><h3>{{book.precio}}</h3></td>
    </tr>
   </table> `,
   styleUrls: ['./books-details.component.css']
@@ -25,10 +25,9 @@ export class BooksDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.ser.getbooks().subscribe(
-
-    res => {this.all = res;
-            console.log( 'aqui esta' + this.all); } ,
-             error => console.log('error en:', error)
+        //  res => {this.all = res.filter( x => x.tipo === ); } ,
+          res => this.all = res  ,
+          error => console.log('error en:', error)
 
 
     );

@@ -21,7 +21,7 @@ export class BookService {
   portada = '';
   idcodigo = '';
   usersUrl = '';
-
+ 
 
   constructor( private  http: HttpClient) {}
 
@@ -30,7 +30,7 @@ export class BookService {
 ** obtengo los libros por medio de un servio
 */
   getbooks (): Observable<any> {
-    return this.http.get('api/books').catch(this.handleError);
+    return this.http.get(this.usersUrl).catch(this.handleError);
   }
 
  

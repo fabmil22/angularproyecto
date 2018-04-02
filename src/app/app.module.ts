@@ -17,6 +17,7 @@ import { InMemorydataService } from './service/in-memorydata.service';
 import { VerificacionMemoryComponent } from './components/verificacion-memory/verificacion-memory.component';
 import { UsersService } from './service/users.service';
 import { HttpModule } from '@angular/http';
+import { MatematicaComponent } from './components/matematica/matematica.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HttpModule } from '@angular/http';
     NovelaComponent,
     TecnicoComponent,
     AnyBooksComponent,
-    VerificacionMemoryComponent
+    VerificacionMemoryComponent,
+    MatematicaComponent
   ],
   imports: [
     BrowserModule,
