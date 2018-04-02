@@ -33,9 +33,8 @@ export class BookService {
     return this.http.get(this.usersUrl).catch(this.handleError);
   }
 
- 
 
-
+  saveBooks(){}
 
   private handleError (error: any) {
     console.error('error servicio', error);
@@ -43,24 +42,5 @@ export class BookService {
   }
 
 
-  /**getName
-   ** get autor
-   */
-  getName() {
-    return this.autor;
-  }
-
-/**getName
-   ** get number pages
-   */
-  getPaginas() {
-    return this.paginas;
-  }
-
-  /**getName
-   ** get titulo de libro
-   */
-  getTITULO() {
-    return this.titulo;
-  }
+ 
 }

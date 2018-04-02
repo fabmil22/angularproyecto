@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VerificacionMemoryComponent } from './verificacion-memory.component';
+import { BookService } from '../../service/book.service';
 
 describe('VerificacionMemoryComponent', () => {
   let component: VerificacionMemoryComponent;
@@ -8,7 +9,10 @@ describe('VerificacionMemoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VerificacionMemoryComponent ]
+      declarations: [ VerificacionMemoryComponent ],
+      providers: [
+        BookService
+      ],
     })
     .compileComponents();
   }));

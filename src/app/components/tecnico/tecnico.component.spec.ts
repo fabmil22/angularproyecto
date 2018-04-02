@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TecnicoComponent } from './tecnico.component';
+import { BooksDetailsComponent } from '../books-details/books-details.component';
+import { BookService } from '../../service/book.service';
 
 describe('TecnicoComponent', () => {
   let component: TecnicoComponent;
@@ -8,7 +10,12 @@ describe('TecnicoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TecnicoComponent ]
+      declarations: [ TecnicoComponent,
+        BooksDetailsComponent
+       ],
+       providers: [
+        BookService
+      ],
     })
     .compileComponents();
   }));

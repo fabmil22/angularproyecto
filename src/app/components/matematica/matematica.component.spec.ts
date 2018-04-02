@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MatematicaComponent } from './matematica.component';
+import { BooksDetailsComponent } from '../books-details/books-details.component';
+import { BookService } from '../../service/book.service';
 
 describe('MatematicaComponent', () => {
   let component: MatematicaComponent;
@@ -8,7 +10,11 @@ describe('MatematicaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MatematicaComponent ]
+      declarations: [ MatematicaComponent,
+        BooksDetailsComponent ],
+        providers: [
+          BookService
+        ],
     })
     .compileComponents();
   }));

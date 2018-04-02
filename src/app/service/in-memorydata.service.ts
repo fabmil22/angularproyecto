@@ -18,7 +18,7 @@ export class InMemorydataService implements InMemoryDbService {
         'autor'   : 'Patricia Cornwell',
         'titulo'  : 'El psicoanalista',
         'portada' : 'assets/imgs/1.jpg',
-        'idcodigo': 'su0001',
+        'idcodigo': 'sus0001',
       },
      {
       'tipo'    : 'tecnico',
@@ -37,7 +37,7 @@ export class InMemorydataService implements InMemoryDbService {
       'autor'   : 'Deborah Waugh',
       'titulo'  : 'Basic Algebra For Kids: Simple Step by Step Guide For Learning, Homework and Revision',
       'portada' : 'assets/imgs/3.jpg',
-      'idcodigo': 'tec0001',
+      'idcodigo': 'mat0001',
 
      },
 
