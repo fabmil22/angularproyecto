@@ -21,6 +21,11 @@ import { MatematicaComponent } from './components/matematica/matematica.componen
 import { AppRoutingModule } from './app-routing.module';
 import { AddbooksComponent } from './components/addbooks/addbooks.component';
 import { NavbarComponent } from './share/navbar/navbar.component';
+import { MostrarComponent } from './components/mostrar/mostrar.component';
+import { MostrarMatematicasComponent } from './components/mostrar-matematicas/mostrar-matematicas.component';
+import { MostrartecnicosComponent } from './components/mostrartecnicos/mostrartecnicos.component';
+import { MostrarsuspensoComponent } from './components/mostrarsuspenso/mostrarsuspenso.component';
+import { CartShowComponent } from './components/cart-show/cart-show.component';
 
 
 @NgModule({
@@ -34,7 +39,12 @@ import { NavbarComponent } from './share/navbar/navbar.component';
     VerificacionMemoryComponent,
     MatematicaComponent,
     AddbooksComponent,
-    NavbarComponent
+    NavbarComponent,
+    MostrarComponent,
+    MostrarMatematicasComponent,
+    MostrartecnicosComponent,
+    MostrarsuspensoComponent,
+    CartShowComponent
   ],
   imports: [
     AppRoutingModule,
