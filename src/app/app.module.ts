@@ -18,6 +18,9 @@ import { VerificacionMemoryComponent } from './components/verificacion-memory/ve
 import { UsersService } from './service/users.service';
 import { HttpModule } from '@angular/http';
 import { MatematicaComponent } from './components/matematica/matematica.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AddbooksComponent } from './components/addbooks/addbooks.component';
+import { NavbarComponent } from './share/navbar/navbar.component';
 
 
 @NgModule({
@@ -29,15 +32,19 @@ import { MatematicaComponent } from './components/matematica/matematica.componen
     TecnicoComponent,
     AnyBooksComponent,
     VerificacionMemoryComponent,
-    MatematicaComponent
+    MatematicaComponent,
+    AddbooksComponent,
+    NavbarComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     HttpModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemorydataService
-    )
+    ),
+    
   ],
   providers: [AuthService, WeatherService , UsersService],
   bootstrap: [AppComponent]
